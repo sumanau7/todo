@@ -28,7 +28,11 @@ Database: SQLITE
 `GET` /user/todo/1 - Get todo with given resource ID.</br>
 `DELETE` /user/todo/1 - Delete todo with given resource ID.</br>
 
-## Production Deployment
+## DB Migration
+export FLASK_APP=server.py
+`flask db init`
+`flask db migrate`
+`flask db upgrade`
 
 ### Usage
 
